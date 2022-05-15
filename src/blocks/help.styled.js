@@ -28,7 +28,7 @@ export const HelpList = styled.div`
 
   &:after {
     content: '';
-    background-image: linear-gradient(to bottom left, #43BFB9, #A246CD);
+    background-image: linear-gradient(to bottom left, #4A3C82, #305D7B);
     filter: blur(200px);
     position: absolute;
     width: 100%;

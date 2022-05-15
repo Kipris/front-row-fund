@@ -5,7 +5,7 @@ import { device } from '../assets/styles/media-query';
 
 export const BenefitsBlock = styled.div`
   padding: 40px 0 35px;
-  background-image: linear-gradient(to bottom right, #1B9690 -30%, #7E1FAB);
+  background-image: linear-gradient(to bottom left, #4A3C82, #305D7B);
   color: ${Colors.white};
 
   @media ${device.tablet} {

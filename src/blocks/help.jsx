@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { HelpBlock, HelpWrap, Title, HelpList, HelpItem, HelpIcon, HelpTitle, HelpDescription } from './help.styled';
 import { Container } from '../components/container';
-import { Link } from 'react-scroll';
-import { Button, ButtonColor, ButtonType } from '../components/button';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import investment from '../assets/img/investment.svg';
 import hierarchy from '../assets/img/hierarchy.svg';
 import scaling from '../assets/img/scaling.svg';

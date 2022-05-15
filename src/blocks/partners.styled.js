@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Colors } from '../assets/styles/colors';
 import { device } from '../assets/styles/media-query';
 

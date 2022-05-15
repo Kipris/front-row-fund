@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { PartnersBlock, PartnersWrap, List, ListItem } from './partners.styled';
-import { Container } from '../components/container';
 import { Button, ButtonColor } from '../components/button';
 import { Link } from 'react-scroll';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

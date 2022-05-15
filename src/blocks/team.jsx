@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { TeamBlock, TeamWrap, Title, TeamList, TeamItem, TeamPhoto, TeamInfo, Name, Position, Description, AdvisorTitle, TeamMoreInfo, MoreInfoDescription, SocialMedia, Shadow } from './team.styled';
 import { Container } from '../components/container';
-import { Link } from 'react-scroll';
 import { Button, ButtonColor, ButtonType } from '../components/button';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import member from '../assets/img/member.png';
 
 const Team = () => {

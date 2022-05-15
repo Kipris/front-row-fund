@@ -120,29 +120,31 @@ export const TeamItem = styled.div`
 `;
 
 export const Shadow = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  &:before,
-  &:after {
-    content: '';
+  @media ${device.tablet} {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 8px;
-  }
 
-  &:before {
-    box-shadow: 0 1px 3px rgba(118, 139, 168, .2);
-  }
+    &:before,
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 8px;
+    }
 
-  &:after {
-    box-shadow: 0 1px 20px rgba(186, 195, 212, .25);
+    &:before {
+      box-shadow: 0 1px 3px rgba(118, 139, 168, .2);
+    }
+
+    &:after {
+      box-shadow: 0 1px 20px rgba(186, 195, 212, .25);
+    }
   }
 `;
 

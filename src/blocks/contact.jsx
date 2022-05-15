@@ -3,10 +3,6 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { ContactBlock, ContactWrap, Title, Description, FormContainer, Form, Label, Input, Textarea, Submit, Error, Success } from './contact.styled';
 import { Container } from '../components/container';
-import { Link } from 'react-scroll';
-import { Button, ButtonColor, ButtonType } from '../components/button';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();

@@ -192,6 +192,8 @@ export const SocialMedia = styled.div`
 `;
 
 export const TeamPhoto = styled(LazyLoadImage)`
+  position: relative;
+  z-index: 1;
   min-width: 112px;
   width: 30.232836vw;
   height: auto;

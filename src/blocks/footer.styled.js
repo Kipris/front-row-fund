@@ -182,4 +182,6 @@ export const Contacts = styled.div`
   }
 `;
 
-export const ListItem = styled.div``;
+export const ListItem = styled.div`
+  cursor: pointer;
+`;

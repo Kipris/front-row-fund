@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FooterBlock, FooterWrap, Info, Logo, Navigation, Left, Right, Contacts, ListItem } from './footer.styled';
 import { Container } from '../components/container';
 import { Link } from 'react-scroll';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import logo from '../assets/img/logo-white.svg';
+import { DialogContext } from '../app';
 
 const Footer = () => {
+  const { activeDialog, setActiveDialog } = useContext(DialogContext);
+
   const [ leftNav ] = useState([
     { title: 'Home', scrollToElement: 'banner' },
     { title: 'About us', scrollToElement: 'about' },
@@ -16,9 +19,9 @@ const Footer = () => {
   ]);
 
   const [ rightNav ] = useState([
-    { title: 'Terms of Use', text: '' },
-    { title: 'Privacy Policy', text: '' },
-    { title: 'Legal Disclaimer', text: '' },
+    { title: 'Terms of Use', text: '', click: () => setActiveDialog({ id: 'terms-of-use', title: 'Terms of Use' }) },
+    { title: 'Privacy Policy', text: '', click: () => setActiveDialog({ id: 'privacy-policy', title: 'Privacy Policy' }) },
+    { title: 'Legal Disclaimer', text: '', click: () => setActiveDialog({ id: 'legal-disclaimer', title: 'Legal Disclaimer' }) },
   ]);
 
   return (
@@ -55,9 +58,10 @@ const Footer = () => {
               ))}
             </Left>
             <Right>
-              {rightNav.map(({ title }, index) => (
+              {rightNav.map(({ title, click }, index) => (
                 <ListItem
                   key={index}
+                  onClick={click}
                 >
                   {title}
                 </ListItem>

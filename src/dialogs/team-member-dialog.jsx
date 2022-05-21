@@ -32,9 +32,9 @@ export const TeamMemberDialog = ({ content }) => {
     <>
       <Position>{position}</Position>
       <MoreInfo dangerouslySetInnerHTML={{__html: moreInfo}} />
-      <SocialBlock>
+      {/* <SocialBlock>
         {renderSocialMedia(socialMediaLinks)}
-      </SocialBlock>
+      </SocialBlock> */}
     </>
   );
 }

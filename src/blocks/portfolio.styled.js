@@ -28,9 +28,7 @@ export const List = styled.div`
   }
 `;
 
-export const ListItem = styled.a`
-  display: inline-block;
-  text-decoration: none;
+export const ListItem = styled.div`
   color: ${Colors.darkBlue};
   margin-bottom: 32px;
   width: 100%;

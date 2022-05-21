@@ -113,6 +113,7 @@ export const Left = styled.div`
   text-transform: uppercase;
 
   a {
+    cursor: pointer;
     display: inline-block;
     margin-bottom: 13px;
   }

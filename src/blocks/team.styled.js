@@ -86,16 +86,16 @@ export const TeamItem = styled.div`
   cursor: pointer;
   position: relative;
   display: grid;
-  grid-template-columns: 30.232836vw 1fr;
+  grid-template-columns: 112px 1fr;
   margin-bottom: 22px;
   column-gap: 20px;
 
   @media ${device.tablet} {
-    grid-template-columns: 184px 1fr;
     background: ${Colors.white};
     border-radius: 8px;
     column-gap: 23px;
     margin-bottom: 18px;
+    padding: 24px;
   }
 
   @media ${device.laptop} {
@@ -103,6 +103,7 @@ export const TeamItem = styled.div`
     border-radius: 0 0 8px 8px;
     overflow: hidden;
     margin-bottom: 0;
+    padding-top: 32px;
 
     button {
       display: none;
@@ -194,28 +195,24 @@ export const SocialMedia = styled.div`
 export const TeamPhoto = styled(LazyLoadImage)`
   position: relative;
   z-index: 1;
-  min-width: 112px;
-  width: 30.232836vw;
-  height: auto;
-  border-radius: 8px;
-
-  @media ${device.tablet} {
-    max-width: 184px;
-    border-radius: 8px 0 0 8px;
-  }
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
 
   @media ${device.laptop} {
     max-width: 100%;
-    width: 100%;
-    border-radius: 0;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
   }
 `;
 
 export const TeamInfo = styled.div`
+  padding-top: 8px;
+
   @media ${device.tablet} {
     position: relative;
     z-index: 1;
-    padding: 23px 5px 5px 0;
   }
 
   @media ${device.laptop} {

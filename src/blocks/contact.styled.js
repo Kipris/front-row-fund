@@ -130,7 +130,7 @@ export const Label = styled.div`
   }
 
   @media ${device.tablet} {
-    margin-bottom: 0;
+    margin-bottom: 23px;
   }
 `;
 
@@ -149,10 +149,6 @@ const FormField = `
   :focus-visible,
   :active {
     outline: none;
-  }
-
-  @media ${device.tablet} {
-    margin-bottom: 23px;
   }
 `;
 
@@ -185,16 +181,25 @@ export const Submit = styled.input`
 
 export const Error = styled.small`
   display: inline-block;
-  color: #C92519;
+  color: ${Colors.red};
   font-size: 12px;
   font-weight: normal;
   margin-top: 5px;
 `;
 
 export const Success = styled.div`
-  display: inline-block;
-  color: ${Colors.blue};
+  color: ${Colors.darkBlue};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 0;
+`;
+
+export const SuccessTitle = styled.h5`
+  margin: 13px 0 10px;
+`;
+
+export const SuccessText = styled.div`
   font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
 `;

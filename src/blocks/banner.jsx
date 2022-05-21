@@ -17,7 +17,7 @@ const Banner = () => {
             Our team partners with early-stage companies, preparing them for growth and helping them avoid the hurdles that inhibit success
           </Subtitle>
           <Link
-            to=''
+            to='contact'
             smooth={true}
             duration={1000}
             offset={-70}

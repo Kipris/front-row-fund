@@ -94,6 +94,7 @@ export const ImageContainer = styled.div`
   min-width: 200px;
   width: 200px;
   height: 200px;
+  margin-bottom: 12px;
 
   > img {
     width: 100%;

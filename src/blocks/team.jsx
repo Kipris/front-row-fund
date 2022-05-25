@@ -15,6 +15,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import facebook from '../assets/img/facebook.svg';
 import email from '../assets/img/email.svg';
 import linkedin from '../assets/img/linkedin.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Team = () => {
   const { activeDialog, setActiveDialog } = useContext(DialogContext);
@@ -56,11 +58,11 @@ const Team = () => {
   const renderIcon = (socialMediaType) => {
     switch (socialMediaType) {
       case 'facebook':
-        return <img src={facebook} alt={socialMediaType} />;
+        return <LazyLoadImage src={facebook} alt={socialMediaType} />;
       case 'email':
-        return <img src={email} alt={socialMediaType} />;
+        return <LazyLoadImage src={email} alt={socialMediaType} />;
       case 'linkedin':
-        return <img src={linkedin} alt={socialMediaType} />;
+        return <LazyLoadImage src={linkedin} alt={socialMediaType} />;
       default:
         return null;
     }

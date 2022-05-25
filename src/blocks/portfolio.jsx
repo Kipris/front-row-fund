@@ -33,7 +33,7 @@ const Portfolio = () => {
                 key={index}
               >
                 <LogoWrap style={{ background }}>
-                  <LazyLoadImage src={iconSrc} alt={name} />
+                  <LazyLoadImage src={iconSrc} alt={name} width='auto' height='auto' />
                 </LogoWrap>
                 <ClientTitle>{name}</ClientTitle>
                 <Description>{description}</Description>

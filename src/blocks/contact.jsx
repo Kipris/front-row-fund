@@ -38,7 +38,7 @@ const Contact = () => {
           <FormContainer>
             {isSubmitted ? (
               <Success>
-                <LazyLoadImage src={letter} alt='Mail sent' />
+                <LazyLoadImage src={letter} alt='Mail sent' width='auto' height='auto' />
                 <SuccessTitle>Thank you!</SuccessTitle>
                 <SuccessText>Your message has been sent</SuccessText>
                 <Button onClick={() => setSubmitted(false)}>OK</Button>

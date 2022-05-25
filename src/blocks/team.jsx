@@ -58,11 +58,11 @@ const Team = () => {
   const renderIcon = (socialMediaType) => {
     switch (socialMediaType) {
       case 'facebook':
-        return <LazyLoadImage src={facebook} alt={socialMediaType} />;
+        return <LazyLoadImage src={facebook} alt={socialMediaType} width='auto' height='auto' />;
       case 'email':
-        return <LazyLoadImage src={email} alt={socialMediaType} />;
+        return <LazyLoadImage src={email} alt={socialMediaType} width='auto' height='auto' />;
       case 'linkedin':
-        return <LazyLoadImage src={linkedin} alt={socialMediaType} />;
+        return <LazyLoadImage src={linkedin} alt={socialMediaType} width='auto' height='auto' />;
       default:
         return null;
     }

@@ -58,6 +58,7 @@ export const Header = () => {
               alt='Front Row Fund Logo'
               effect='blur'
               src={logo}
+              width='auto' height='auto'
             />
           </Logo>
           <ToggleWrap

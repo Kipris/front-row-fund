@@ -36,7 +36,7 @@ const DialogContainer = () => {
     || activeDialog?.id === dialogs.advisorMember.id
     ? (
       <ImageContainer>
-        <LazyLoadImage src={activeDialog?.content?.photo} alt={activeDialog?.title} />
+        <LazyLoadImage src={activeDialog?.content?.photo} alt={activeDialog?.title} width='auto' height='auto' />
       </ImageContainer>
     ) : null;
   }

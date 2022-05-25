@@ -7,6 +7,7 @@ export const BannerBlock = styled.div`
   height: 100vh;
   max-height: -webkit-fill-available;
   color: ${Colors.white};
+  background-color: ${Colors.darkBlue};
 
   > span {
     position: absolute;

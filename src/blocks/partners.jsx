@@ -4,10 +4,10 @@ import { Button, ButtonColor } from '../components/button';
 import { Link } from 'react-scroll';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import notiv from '../assets/img/notiv.png';
-import preshow from '../assets/img/preshow.png';
-import carealign from '../assets/img/care.png';
-import gatehouse from '../assets/img/gatehouse.png';
+import notiv from '../assets/img/notiv.webp';
+import preshow from '../assets/img/preshow.webp';
+import carealign from '../assets/img/care.webp';
+import gatehouse from '../assets/img/gatehouse.webp';
 import notivSmall from '../assets/img/notiv.svg';
 import preshowSmall from '../assets/img/preshow.svg';
 import carealignSmall from '../assets/img/carealign.svg';
@@ -26,17 +26,12 @@ const Partners = () => {
       <PartnersWrap>
         <List>
           {partners.map(({ imgSrc, imgSmallSrc, name, link }, index) => (
-            <ListItem
-              key={index}
-              target='_blank'
-              rel='noreferrer'
-              href={link}
-            >
+            <ListItem key={index}>
               <LazyLoadImage src={imgSmallSrc} alt={name} />
             </ListItem>
           ))}
           <Link
-            to=''
+            to='portfolio'
             smooth={true}
             duration={1000}
             offset={-70}

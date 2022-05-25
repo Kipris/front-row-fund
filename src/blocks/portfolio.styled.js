@@ -3,6 +3,7 @@ import { Colors } from '../assets/styles/colors';
 import { device } from '../assets/styles/media-query';
 
 export const PortfolioBlock = styled.div`
+  background-color: ${Colors.white};
   padding: 56px 0 23px;
 
   @media ${device.tablet} {

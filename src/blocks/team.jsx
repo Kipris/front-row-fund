@@ -2,14 +2,14 @@ import React, { useState, useContext } from 'react';
 import { TeamBlock, TeamWrap, Title, TeamList, TeamItem, TeamPhoto, TeamInfo, Name, Position, Description, AdvisorTitle, TeamMoreInfo, MoreInfoDescription, SocialMedia, Shadow } from './team.styled';
 import { Container } from '../components/container';
 import { Button, ButtonColor, ButtonType } from '../components/button';
-import team01 from '../assets/img/team01.png';
-import team02 from '../assets/img/team02.png';
-import team03 from '../assets/img/team03.png';
-import team04 from '../assets/img/team04.png';
-import adv01 from '../assets/img/adv01.png';
-import adv02 from '../assets/img/adv02.png';
-import adv03 from '../assets/img/adv03.png';
-import adv04 from '../assets/img/adv04.png';
+import team01 from '../assets/img/team01.webp';
+import team02 from '../assets/img/team02.webp';
+import team03 from '../assets/img/team03.webp';
+import team04 from '../assets/img/team04.webp';
+import adv01 from '../assets/img/adv01.webp';
+import adv02 from '../assets/img/allegra.webp';
+import adv03 from '../assets/img/seredova.webp';
+import adv04 from '../assets/img/adv04.webp';
 import { DialogContext } from '../app';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import facebook from '../assets/img/facebook.svg';
@@ -28,8 +28,8 @@ const Team = () => {
 
   const [ advisorMembers ] = useState([
     {name: 'Ed Reitler', position: 'Reitler, Kailas & Rosenblatt LLC', photo: adv01, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Ed Reitler is a Senior Partner at Reitler, Kailas & Rosenblatt LLC. Ed is one of the leading venture attorneys in the northeast and has represented dozens of venture funds and their portfolio companies. He is a frequent speaker and panelist on issues affecting the private equity and venture capital markets and is a regular guest lecturer on venture capital finance at Columbia Business School. Ed graduated from Harvard Law School, magna cum laude, where he was an Editor and a contributor to the Journal of Law and Public Policy and a contributor to the Harvard Journal of Legislation', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
-    {name: 'Joe Allegra', position: 'Edison Partners', photo: adv01, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Joe Allegra is a General Partner at Edison Partners. Joe led and was a board member of numerous investments over the past 20 years across Edison focus areas of enterprise solutions, financial technology and healthcare IT. Prior to Edison, Joe was co-founder and CEO of Princeton Softech, a rapidly growing, profitable company that developed and marketed database products to Fortune 1000 companies. Joe also co-founded the Software Association of New Jersey and served as Chairman of the New Jersey Technology Council, as well as led the initial financing for NJTC Venture Fund', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
-    {name: 'Marina Seredova', position: 'ABG/Centerbridge', photo: adv01, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Marina Seredova serves as Chief Digital Officer with ABG and is an advisor to a number of venture funded startups. From rolling out advanced industry leading technologies to holding patents, Marina continues to be a thought leader and innovator in digital transformation. She has played a key role in over $500 million of buy-side and sell-side M&A transactions. With expertise in Operations, Strategy, Technology, Digital Engagement, UX/UI , Application Development, Digital Marketing and Data Insights, Marina brings unique perspective to spectrum of companies from early-stage startups to mature market leaders', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
+    {name: 'Joe Allegra', position: 'Edison Partners', photo: adv02, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Joe Allegra is a General Partner at Edison Partners. Joe led and was a board member of numerous investments over the past 20 years across Edison focus areas of enterprise solutions, financial technology and healthcare IT. Prior to Edison, Joe was co-founder and CEO of Princeton Softech, a rapidly growing, profitable company that developed and marketed database products to Fortune 1000 companies. Joe also co-founded the Software Association of New Jersey and served as Chairman of the New Jersey Technology Council, as well as led the initial financing for NJTC Venture Fund', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
+    {name: 'Marina Seredova', position: 'ABG/Centerbridge', photo: adv03, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Marina Seredova serves as Chief Digital Officer with ABG and is an advisor to a number of venture funded startups. From rolling out advanced industry leading technologies to holding patents, Marina continues to be a thought leader and innovator in digital transformation. She has played a key role in over $500 million of buy-side and sell-side M&A transactions. With expertise in Operations, Strategy, Technology, Digital Engagement, UX/UI , Application Development, Digital Marketing and Data Insights, Marina brings unique perspective to spectrum of companies from early-stage startups to mature market leaders', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
     {name: 'Gregg Melinson', position: 'Hewlett-Packard Enterprise', photo: adv04, description: 'Pellentesque in ipsum viverra, molestie ex ut, convallis erat. Aenean in ipsum euismod eros varius dictum et quis', moreInfo: 'Gregg Melinson serves as Senior Vice President, Corporate Affairs, for Hewlett Packard Enterprise. Prior to his current role, Gregg held several roles at HPE and Hewlett-Packard, having served as Vice President for Global Government Affairs and Deputy General Counsel. Prior to HP, Gregg was Chief Marketing Partner at Drinker Biddle & Reath LLP, a 700-lawyer national law firm headquartered in Philadelphia, PA, where he led all strategic client development activities. A 20-year veteran at DBR, Gregg also took time from the firm to serve as deputy general counsel to former Pennsylvania Governor Tom Ridge from 1995 to 1997', socialMediaLinks: { facebook: 'https://facebook.com/', email: 'qwerty@frontrowfung.com', linkedin: 'https://www.linkedin.com/' }},
   ]);
 
@@ -81,7 +81,7 @@ const Team = () => {
           <Title>Meet our team</Title>
           <TeamList>
             {teamMembers.map(({ name, position, photo, description, socialMediaLinks }, index) => (
-              <div key={index}>
+              <div key={index} onClick={() => {handleShowTeamMemberInfo(index)}}>
                 <TeamItem>
                   <TeamPhoto src={photo} alt={name} />
                   <TeamInfo>
@@ -95,12 +95,12 @@ const Team = () => {
                       More
                     </Button>
                   </TeamInfo>
-                  <TeamMoreInfo onClick={() => {handleShowTeamMemberInfo(index)}}>
+                  {/* <TeamMoreInfo onClick={() => {handleShowTeamMemberInfo(index)}}>
                     <MoreInfoDescription>{description}</MoreInfoDescription>
-                    {/* <SocialMedia>
+                    <SocialMedia>
                       {renderSocialMedia(socialMediaLinks)}
-                    </SocialMedia> */}
-                  </TeamMoreInfo>
+                    </SocialMedia>
+                  </TeamMoreInfo> */}
                 </TeamItem>
                 <Shadow />
               </div>
@@ -110,7 +110,7 @@ const Team = () => {
           <AdvisorTitle>Advisors</AdvisorTitle>
           <TeamList>
             {advisorMembers.map(({ name, position, photo, description, socialMediaLinks }, index) => (
-              <div key={index}>
+              <div key={index} onClick={() => {handleShowAdvisorMemberInfo(index)}}>
                 <TeamItem>
                   <TeamPhoto src={photo} alt={name} />
                   <TeamInfo>
@@ -124,12 +124,12 @@ const Team = () => {
                       More
                     </Button>
                   </TeamInfo>
-                  <TeamMoreInfo onClick={() => {handleShowAdvisorMemberInfo(index)}}>
+                  {/* <TeamMoreInfo onClick={() => {handleShowAdvisorMemberInfo(index)}}>
                     <MoreInfoDescription>{description}</MoreInfoDescription>
-                    {/* <SocialMedia>
+                    <SocialMedia>
                       {renderSocialMedia(socialMediaLinks)}
-                    </SocialMedia> */}
-                  </TeamMoreInfo>
+                    </SocialMedia>
+                  </TeamMoreInfo> */}
                 </TeamItem>
                 <Shadow />
               </div>

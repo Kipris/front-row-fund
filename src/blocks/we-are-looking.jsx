@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import { Button, ButtonColor, ButtonType } from '../components/button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import weAreLooking from '../assets/img/we-are-looking.png';
+import weAreLooking from '../assets/img/we-are-looking.webp';
 
 const WeAreLooking = () => {
   return (

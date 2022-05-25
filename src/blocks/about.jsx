@@ -3,8 +3,8 @@ import { AboutBlock, AboutWrap, Feature, FeatureInfo, Title, Description, Featur
 import { Container } from '../components/container';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import dna from '../assets/img/dna.png';
-import deal from '../assets/img/deal.png';
+import dna from '../assets/img/dna.webp';
+import deal from '../assets/img/deal.webp';
 
 const About = () => {
   return (

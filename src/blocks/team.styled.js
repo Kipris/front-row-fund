@@ -104,6 +104,8 @@ export const TeamItem = styled.div`
     overflow: hidden;
     margin-bottom: 0;
     padding-top: 32px;
+    min-height: 320px;
+    text-align center;
 
     button {
       display: none;
@@ -121,6 +123,8 @@ export const TeamItem = styled.div`
 `;
 
 export const Shadow = styled.div`
+  cursor: pointer;
+
   @media ${device.tablet} {
     width: 100%;
     height: 100%;

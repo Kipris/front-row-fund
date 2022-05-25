@@ -55,7 +55,7 @@ export const List = styled.div`
   }
 `;
 
-export const ListItem = styled.a`
+export const ListItem = styled.div`
   margin: 8px 8px;
 
   &:first-child {

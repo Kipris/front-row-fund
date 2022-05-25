@@ -5,12 +5,12 @@ import { Link } from 'react-scroll';
 import { Button, ButtonColor, ButtonType } from '../components/button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import notiv from '../assets/img/notiv.png';
-import choice from '../assets/img/choice.png';
-import carealign from '../assets/img/care.png';
-import qoins from '../assets/img/qoins.png';
-import gatehouse from '../assets/img/gatehouse.png';
-import preshow from '../assets/img/preshow.png';
+import notiv from '../assets/img/notiv.webp';
+import choice from '../assets/img/choice.webp';
+import carealign from '../assets/img/care.webp';
+import qoins from '../assets/img/qoins.webp';
+import gatehouse from '../assets/img/gatehouse.webp';
+import preshow from '../assets/img/preshow.webp';
 
 const Portfolio = () => {
   const [ clients ] = useState([

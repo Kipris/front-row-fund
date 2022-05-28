@@ -50,10 +50,8 @@ export const LogoWrap = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  @media ${device.tablet} {
-    height: 164px;
+    width: 280px;
+    height: auto;
   }
 `;
 

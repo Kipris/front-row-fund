@@ -35,7 +35,6 @@ const Banner = () => {
         alt='Global Aid Bg'
         effect='blur'
         src={bannerBg}
-        width='100%' height='100%'
       />
     </BannerBlock>
   );

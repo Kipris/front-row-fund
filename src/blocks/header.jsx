@@ -58,7 +58,6 @@ export const Header = () => {
               alt='Front Row Fund Logo'
               effect='blur'
               src={logo}
-              width='auto' height='auto'
             />
           </Logo>
           <ToggleWrap
@@ -93,7 +92,7 @@ export const Header = () => {
                 </ListItem>
               ))}
             </List>
-            <Link
+            {/* <Link
               to='contact'
               smooth={true}
               duration={1000}
@@ -106,7 +105,7 @@ export const Header = () => {
               >
                 Get started
               </Button>
-            </Link>
+            </Link> */}
           </Navigation>
         </HeaderWrap>
       </Container>

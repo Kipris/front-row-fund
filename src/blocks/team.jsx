@@ -2,14 +2,14 @@ import React, { useState, useContext } from 'react';
 import { TeamBlock, TeamWrap, Title, TeamList, TeamItem, TeamPhoto, TeamInfo, Name, Position, Description, AdvisorTitle, TeamMoreInfo, MoreInfoDescription, SocialMedia, Shadow } from './team.styled';
 import { Container } from '../components/container';
 import { Button, ButtonColor, ButtonType } from '../components/button';
-import team01 from '../assets/img/team01.webp';
-import team02 from '../assets/img/team02.webp';
-import team03 from '../assets/img/team03.webp';
-import team04 from '../assets/img/team04.webp';
-import adv01 from '../assets/img/adv01.webp';
+import team01 from '../assets/img/haines.webp';
+import team02 from '../assets/img/korsky.webp';
+import team03 from '../assets/img/shtraks.webp';
+import team04 from '../assets/img/hengen.webp';
+import adv01 from '../assets/img/reitler.webp';
 import adv02 from '../assets/img/allegra.webp';
 import adv03 from '../assets/img/seredova.webp';
-import adv04 from '../assets/img/adv04.webp';
+import adv04 from '../assets/img/melinson.webp';
 import { DialogContext } from '../app';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import facebook from '../assets/img/facebook.svg';
@@ -58,11 +58,11 @@ const Team = () => {
   const renderIcon = (socialMediaType) => {
     switch (socialMediaType) {
       case 'facebook':
-        return <LazyLoadImage src={facebook} alt={socialMediaType} width='auto' height='auto' />;
+        return <LazyLoadImage src={facebook} alt={socialMediaType} />;
       case 'email':
-        return <LazyLoadImage src={email} alt={socialMediaType} width='auto' height='auto' />;
+        return <LazyLoadImage src={email} alt={socialMediaType} />;
       case 'linkedin':
-        return <LazyLoadImage src={linkedin} alt={socialMediaType} width='auto' height='auto' />;
+        return <LazyLoadImage src={linkedin} alt={socialMediaType} />;
       default:
         return null;
     }

@@ -11,6 +11,7 @@ export const PartnersWrap = styled.div`
   padding: 19px 0;
   box-shadow: 0 1px 3px rgba(118, 139, 168, .2);
   box-sizing: border-box;
+  background: ${Colors.white};
 
   @media ${device.tablet} {
     position: absolute;

@@ -68,7 +68,7 @@ export const Banner = styled.div`
 
   .lazy-load-image-background img {
     width: inherit;
-    height: auto;
+    height: 100%;
   }
 
   @media ${device.laptopL} {

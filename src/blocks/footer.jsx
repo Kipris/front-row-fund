@@ -36,7 +36,6 @@ const Footer = () => {
                 alt='Front Row Fund Logo'
                 effect='blur'
                 src={logo}
-                width='auto' height='auto'
               />
             </Logo>
             <div>

@@ -18,7 +18,7 @@ const About = () => {
             </FeatureInfo>
             <FeatureImage>
               <FeatureImageWrap>
-                <LazyLoadImage src={dna} alt='Operator led team' width='auto' height='auto' />
+                <LazyLoadImage src={dna} alt='Operator led team' />
               </FeatureImageWrap>
             </FeatureImage>
           </Feature>
@@ -29,7 +29,7 @@ const About = () => {
             </FeatureInfo>
             <FeatureImage position='left'>
               <FeatureImageWrap position='left'>
-                <LazyLoadImage src={deal} alt='Broad technology' width='auto' height='auto' />
+                <LazyLoadImage src={deal} alt='Broad technology' />
               </FeatureImageWrap>
             </FeatureImage>
           </Feature>

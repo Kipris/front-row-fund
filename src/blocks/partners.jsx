@@ -27,7 +27,7 @@ const Partners = () => {
         <List>
           {partners.map(({ imgSrc, imgSmallSrc, name, link }, index) => (
             <ListItem key={index}>
-              <LazyLoadImage src={imgSmallSrc} alt={name} width='auto' height='auto' />
+              <LazyLoadImage src={imgSmallSrc} alt={name} />
             </ListItem>
           ))}
           <Link

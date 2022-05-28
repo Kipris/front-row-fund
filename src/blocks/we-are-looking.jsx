@@ -15,7 +15,6 @@ const WeAreLooking = () => {
           alt='We are looking Bg'
           effect='blur'
           src={weAreLooking}
-          width='100%' height='100%'
         />
         <BannerTitle>
           We are looking to invest in companies where we can have an immediate and direct impact

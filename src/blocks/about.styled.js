@@ -3,7 +3,7 @@ import { Colors } from '../assets/styles/colors';
 import { device } from '../assets/styles/media-query';
 
 export const AboutBlock = styled.div`
-  padding: 40px 0 0;
+  padding: 40px 0 1px;
   background-image: linear-gradient(to bottom, ${Colors.grey}, ${Colors.white});
 
   @media ${device.tablet} {

@@ -14,7 +14,7 @@ const Contact = () => {
   const [ isSubmitted, setSubmitted ] = useState(false);
 
   const onSubmit = () => {
-    emailjs.sendForm('service_z5jihrs', 'template_p92vxmt', '#contact-form', 'Hqx5vnKbFE08R4iHv')
+    emailjs.sendForm('service_nqxhtsr', 'template_p92vxmt', '#contact-form', 'Hqx5vnKbFE08R4iHv')
       .then((result) => {
         setSubmitted(true);
         setTimeout(() => {
@@ -38,7 +38,7 @@ const Contact = () => {
           <FormContainer>
             {isSubmitted ? (
               <Success>
-                <LazyLoadImage src={letter} alt='Mail sent' width='auto' height='auto' />
+                <LazyLoadImage src={letter} alt='Mail sent' />
                 <SuccessTitle>Thank you!</SuccessTitle>
                 <SuccessText>Your message has been sent</SuccessText>
                 <Button onClick={() => setSubmitted(false)}>OK</Button>

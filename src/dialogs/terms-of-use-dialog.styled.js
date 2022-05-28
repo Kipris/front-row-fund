@@ -4,6 +4,14 @@ import { device } from '../assets/styles/media-query';
 
 export const Title = styled.div``;
 
+export const Link = styled.div`
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const Subtitle = styled.div`
   font-size: 24px;
   line-height: 29px;
